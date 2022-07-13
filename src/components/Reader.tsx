@@ -1,17 +1,87 @@
 import {
   Box,
-  Typography
-} from '@mui/material';
-import { Fragment } from 'react';
+} from '@mui/material'
+import Utrennie from '../prayers/utro/cs/Utrennie';
+import UtrennieAlt from '../prayers/utro/ru/Utrennie';
+import Miitarya from '../prayers/utro/cs/Miitarya';
+import MiitaryaAlt from '../prayers/utro/ru/Miitarya';
+import Prednachinatelnaya from '../prayers/utro/cs/Prednachinatelnaya';
+import PrednachinatelnayaAlt from '../prayers/utro/ru/Prednachinatelnaya';
+import SvyatomuDuhu from '../prayers/utro/cs/SvyatomuDuhu';
+import SvyatomuDuhuAlt from '../prayers/utro/ru/SvyatomuDuhu';
+import Trisvyatoe from '../prayers/utro/cs/Trisvyatoe';
+import TrisvyatoeAlt from '../prayers/utro/ru/Trisvyatoe';
+import KoPresvyatoyTroitse from '../prayers/utro/cs/KoPresvyatoyTroitse';
+import KoPresvyatoyTroitseAlt from '../prayers/utro/ru/KoPresvyatoyTroitse';
+import Gospodnya from '../prayers/utro/cs/Gospodnya';
+import GospodnyaAlt from '../prayers/utro/ru/Gospodnya';
+import TropariTroichnie from '../prayers/utro/cs/TropariTroichnie';
+import TropariTroichnieAlt from '../prayers/utro/ru/TropariTroichnie';
+import OtSna from '../prayers/utro/cs/OtSna';
+import OtSnaAlt from '../prayers/utro/ru/OtSna';
+import Psalom50 from '../prayers/utro/cs/Psalom50';
+import Psalom50Alt from '../prayers/utro/ru/Psalom50';
+import SimvolVerii from '../prayers/utro/cs/SimvolVerii';
+import SimvolVeriiAlt from '../prayers/utro/ru/SimvolVerii';
+import M1 from '../prayers/utro/cs/M1';
+import M1Alt from '../prayers/utro/ru/M1';
+import M2 from '../prayers/utro/cs/M2';
+import M2Alt from '../prayers/utro/ru/M2';
 
 const Reader: React.FC = () => {
   return (
     <Box
+      // className={styles.Reader}
       sx={{
         width: '100%',
         maxWidth: '900px',
         margin: '0 auto',
         overflowX: 'auto',
+
+        'section h2': {
+          margin: '0 0 16px 0',
+          fontSize: '1.75rem',
+          lineHeight: 1.2,
+          letterSpacing: '-0.00833em',
+        },
+        'section h3': {
+          margin: '0 0 8px 0',
+          fontSize: '1.1rem',
+          lineHeight: 1.167,
+          letterSpacing: '0em',
+          fontWeight: 500,
+        },
+        'section i': {
+          fontWeight: 300,
+        },
+
+        'section header': {
+          textAlign: 'center',
+        },
+        
+        'section header p': {
+          margin: '-4px 0 8px 0',
+          fontSize: '0.875rem',
+          lineHeight: 1.57,
+          letterSpacing: '0.00714em',
+        },
+        
+        'section > p': {
+          textAlign: 'justify',
+        },
+
+        'section footer': {
+          margin: '-4px 0 8px 0',
+          fontSize: '0.875rem',
+          lineHeight: 1.43,
+          letterSpacing: '0.01071em',
+          textAlign: 'left',
+
+          borderWidth: 0,
+          borderStyle: 'solid',
+          borderTopWidth: 'thin',
+          borderImage: '100% 0 0 linear-gradient(90deg, currentColor 5em, transparent 0)',
+        },
       }}
     >
       <Box
@@ -25,54 +95,32 @@ const Reader: React.FC = () => {
           textAlign: 'justify',
         }}
       >
-        {new Array(10).fill(0).map((_, i) => (
-          <Fragment
-            key={i}
-          >
-            <Typography>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ad harum, totam voluptate error vitae, possimus tempore tenetur vero facere similique. Ut ullam expedita hic molestiae quas dolor voluptatem eaque.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia quod corrupti exercitationem sint impedit laudantium quibusdam deserunt laboriosam ut, a quam adipisci cupiditate tempora consectetur! Debitis amet est hic!
-            </Typography>
-            <Typography>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magnam eaque sed assumenda natus id!
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, cupiditate qui? Vel officiis numquam velit.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nulla ex nesciunt possimus expedita beatae ipsum! Excepturi, deleniti? Ipsum, porro ab, cum, impedit nobis explicabo inventore alias iusto vel eius dolores quaerat fugit libero beatae quae sapiente quibusdam ad numquam voluptatum sequi maxime nesciunt! Voluptate inventore earum eos eius vitae.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio illo nemo fugiat at quam voluptates quibusdam omnis, aut aperiam, voluptatem tenetur officia totam! Natus possimus sit quia amet, eveniet eaque earum beatae culpa! Omnis in eos odit quis error cumque eius sed, earum saepe reiciendis magni atque ratione voluptate!
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eius id nisi architecto quis dicta iste nesciunt adipisci delectus quaerat!
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptate dolorem voluptates soluta ullam deleniti ipsam fuga. Minima, iure odit!
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse libero facere quae quos illum laborum dolorem rem, eos aspernatur tenetur dolore dolor dicta ipsam sapiente magnam. Ipsam impedit voluptatibus magnam laborum eaque voluptates odit dolores et praesentium repellat at quae tenetur, consequatur neque. Dolor, ut ipsum alias nemo tempore provident natus ab beatae nihil, quaerat consectetur voluptate soluta, dolorum veritatis amet sed ipsa sapiente quis voluptas quasi quas? Debitis?
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis illum quisquam cumque id ea consectetur minus accusantium recusandae, est, explicabo itaque. Nam maiores quod culpa eligendi, dolorem ex architecto iusto natus sapiente! Animi ex voluptate iusto incidunt perspiciatis fugit aut at unde exercitationem molestias, saepe autem minima, non laborum fugiat, repellendus quod eaque blanditiis consectetur rerum. Ullam autem ad tempore porro nihil commodi magni consectetur sapiente, sequi magnam quibusdam eaque.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempore natus id nesciunt ipsa voluptas, labore explicabo fuga doloremque earum harum placeat iure fugit officiis laborum perspiciatis autem laboriosam facere iusto nobis dicta. Error, id. Est nesciunt quis similique fugit temporibus. Sunt, delectus corporis, aliquam necessitatibus vitae magnam id velit excepturi consectetur, nemo numquam natus! Cumque assumenda consequuntur iste sed, ducimus odit optio harum dolores nisi laudantium sapiente tempora, modi, ipsum quaerat recusandae. Vel, iste laudantium. Enim similique amet consequatur. Impedit, quas perferendis, veritatis repudiandae deleniti animi delectus, hic fugiat earum nobis sequi natus obcaecati molestiae quo aspernatur consequatur! Quis.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi distinctio necessitatibus molestiae perspiciatis velit. Voluptatum unde molestiae quia expedita, delectus non blanditiis illo, repudiandae inventore quis earum, qui ab optio tempore error. Odio velit magni nemo optio veniam fugit enim officiis non illo iure voluptatibus, eius iste, excepturi, unde doloribus tempora alias perferendis ea porro perspiciatis nihil voluptates dolorem in. Asperiores ad aliquam cupiditate, accusamus dicta cumque in, optio est quis sed provident consectetur, suscipit dolore repudiandae. Fuga, deleniti. Nisi, placeat. Ipsam, dolorem enim hic praesentium neque similique, cum sequi non optio deleniti tempora fugit voluptatem necessitatibus incidunt tenetur.
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat perspiciatis saepe quas quo amet officia, velit optio alias aperiam eaque adipisci minus suscipit architecto natus rerum reprehenderit perferendis doloremque ipsum odit exercitationem eveniet nostrum eos dolor quod! Inventore sequi necessitatibus laboriosam ut corporis, dolores nostrum aspernatur voluptatem error praesentium sed!
-            </Typography>
-            <Typography>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nemo voluptatibus quae, molestias quis qui voluptate voluptates quod deleniti tenetur necessitatibus culpa est officia accusamus tempore quibusdam inventore dolore saepe, recusandae repudiandae blanditiis minima nobis dignissimos? Distinctio, architecto nulla ipsa suscipit, voluptates dolores tempore similique quidem cum rem dolorum dolor?
-            </Typography>
-          </Fragment>
-        ))}
+        <Utrennie/>
+        <UtrennieAlt/>
+        <Miitarya/>
+        <MiitaryaAlt/>
+        <Prednachinatelnaya/>
+        <PrednachinatelnayaAlt/>
+        <SvyatomuDuhu/>
+        <SvyatomuDuhuAlt/>
+        <Trisvyatoe/>
+        <TrisvyatoeAlt/>
+        <KoPresvyatoyTroitse/>
+        <KoPresvyatoyTroitseAlt/>
+        <Gospodnya/>
+        <GospodnyaAlt/>
+        <TropariTroichnie/>
+        <TropariTroichnieAlt/>
+        <OtSna/>
+        <OtSnaAlt/>
+        <Psalom50/>
+        <Psalom50Alt/>
+        <SimvolVerii/>
+        <SimvolVeriiAlt/>
+        <M1/>
+        <M1Alt/>
+        <M2/>
+        <M2Alt/>
       </Box>
     </Box>
   );
