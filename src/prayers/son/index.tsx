@@ -1,7 +1,5 @@
 import NaSonGryadushim from './cs/NaSonGryadushim';
 import NaSonGryadushimAlt from './ru/NaSonGryadushim';
-import Miitarya from './cs/Miitarya';
-import MiitaryaAlt from './ru/Miitarya';
 import Prednachinatelnaya from './cs/Prednachinatelnaya';
 import PrednachinatelnayaAlt from './ru/Prednachinatelnaya';
 import SvyatomuDuhu from './cs/SvyatomuDuhu';
@@ -14,12 +12,6 @@ import Gospodnya from './cs/Gospodnya';
 import GospodnyaAlt from './ru/Gospodnya';
 import TropariTroichnie from './cs/TropariTroichnie';
 import TropariTroichnieAlt from './ru/TropariTroichnie';
-import OtSna from './cs/OtSna';
-import OtSnaAlt from './ru/OtSna';
-import Psalom50 from './cs/Psalom50';
-import Psalom50Alt from './ru/Psalom50';
-import SimvolVerii from './cs/SimvolVerii';
-import SimvolVeriiAlt from './ru/SimvolVerii';
 import M1 from './cs/M1';
 import M1Alt from './ru/M1';
 import M2 from './cs/M2';
@@ -62,8 +54,6 @@ const Utro: React.FC = () => {
     <>
       <NaSonGryadushim/>
       <NaSonGryadushimAlt/>
-      <Miitarya/>
-      <MiitaryaAlt/>
       <Prednachinatelnaya/>
       <PrednachinatelnayaAlt/>
       <SvyatomuDuhu/>
@@ -76,12 +66,6 @@ const Utro: React.FC = () => {
       <GospodnyaAlt/>
       <TropariTroichnie/>
       <TropariTroichnieAlt/>
-      <OtSna/>
-      <OtSnaAlt/>
-      <Psalom50/>
-      <Psalom50Alt/>
-      <SimvolVerii/>
-      <SimvolVeriiAlt/>
       <M1/>
       <M1Alt/>
       <M2/>
