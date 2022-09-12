@@ -32,6 +32,8 @@ import M9 from './cs/M9';
 import M9Alt from './ru/M9';
 import M10 from './cs/M10';
 import M10Alt from './ru/M10';
+import M11 from './cs/M11';
+import M11Alt from './ru/M11';
 import PriziivanieSvyatogo from './cs/PriziivanieSvyatogo';
 import PriziivanieSvyatogoAlt from './ru/PriziivanieSvyatogo';
 import PesnPresvyatoyBogoroditse from './cs/PesnPresvyatoyBogoroditse';
@@ -86,6 +88,8 @@ const Utro: React.FC = () => {
       <M9Alt/>
       <M10/>
       <M10Alt/>
+      <M11/>
+      <M11Alt/>
       <PriziivanieSvyatogo/>
       <PriziivanieSvyatogoAlt/>
       <PesnPresvyatoyBogoroditse/>
