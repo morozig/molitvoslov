@@ -34,8 +34,10 @@ import M10 from './cs/M10';
 import M10Alt from './ru/M10';
 import M11 from './cs/M11';
 import M11Alt from './ru/M11';
-import PriziivanieSvyatogo from './cs/PriziivanieSvyatogo';
-import PriziivanieSvyatogoAlt from './ru/PriziivanieSvyatogo';
+import KondakBogoroditse from './cs/KondakBogoroditse';
+import KondakBogoroditseAlt from './ru/KondakBogoroditse';
+import Ioannikeya from './cs/Ioannikeya';
+import IoannikeyaAlt from './ru/Ioannikeya';
 import PesnPresvyatoyBogoroditse from './cs/PesnPresvyatoyBogoroditse';
 import PesnPresvyatoyBogoroditseAlt from './ru/PesnPresvyatoyBogoroditse';
 import TroparKrestu from './cs/TroparKrestu';
@@ -90,8 +92,10 @@ const Utro: React.FC = () => {
       <M10Alt/>
       <M11/>
       <M11Alt/>
-      <PriziivanieSvyatogo/>
-      <PriziivanieSvyatogoAlt/>
+      <KondakBogoroditse/>
+      <KondakBogoroditseAlt/>
+      <Ioannikeya/>
+      <IoannikeyaAlt/>
       <PesnPresvyatoyBogoroditse/>
       <PesnPresvyatoyBogoroditseAlt/>
       <TroparKrestu/>

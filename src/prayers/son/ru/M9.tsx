@@ -1,4 +1,4 @@
-const M8: React.FC = () => {
+const M9: React.FC = () => {
   return (
     <section>
       <header>
@@ -28,4 +28,4 @@ const M8: React.FC = () => {
   );
 };
 
-export default M8;
+export default M9;
