@@ -38,8 +38,8 @@ import KondakBogoroditse from './cs/KondakBogoroditse';
 import KondakBogoroditseAlt from './ru/KondakBogoroditse';
 import Ioannikeya from './cs/Ioannikeya';
 import IoannikeyaAlt from './ru/Ioannikeya';
-import PesnPresvyatoyBogoroditse from './cs/PesnPresvyatoyBogoroditse';
-import PesnPresvyatoyBogoroditseAlt from './ru/PesnPresvyatoyBogoroditse';
+import IoannaDamaskina from './cs/IoannaDamaskina';
+import IoannaDamaskinaAlt from './ru/IoannaDamaskina';
 import TroparKrestu from './cs/TroparKrestu';
 import TroparKrestuAlt from './ru/TroparKrestu';
 import OZhivih from './cs/OZhivih';
@@ -96,8 +96,8 @@ const Utro: React.FC = () => {
       <KondakBogoroditseAlt/>
       <Ioannikeya/>
       <IoannikeyaAlt/>
-      <PesnPresvyatoyBogoroditse/>
-      <PesnPresvyatoyBogoroditseAlt/>
+      <IoannaDamaskina/>
+      <IoannaDamaskinaAlt/>
       <TroparKrestu/>
       <TroparKrestuAlt/>
       <OZhivih/>
