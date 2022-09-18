@@ -40,18 +40,14 @@ import Ioannikeya from './cs/Ioannikeya';
 import IoannikeyaAlt from './ru/Ioannikeya';
 import IoannaDamaskina from './cs/IoannaDamaskina';
 import IoannaDamaskinaAlt from './ru/IoannaDamaskina';
-import TroparKrestu from './cs/TroparKrestu';
-import TroparKrestuAlt from './ru/TroparKrestu';
-import OZhivih from './cs/OZhivih';
-import OZhivihAlt from './ru/OZhivih';
-import OUsopshih from './cs/OUsopshih';
-import OUsopshihAlt from './ru/OUsopshih';
-import PomyannikOZhivih from './cs/PomyannikOZhivih';
-import PomyannikOZhivihAlt from './ru/PomyannikOZhivih';
-import PomyannikOUsopshih from './cs/PomyannikOUsopshih';
-import PomyannikOUsopshihAlt from './ru/PomyannikOUsopshih';
-import Okonchanie from './cs/Okonchanie';
-import OkonchanieAlt from './ru/Okonchanie';
+import Krestu from './cs/Krestu';
+import KrestuAlt from './ru/Krestu';
+import Oslabi from './cs/Oslabi';
+import OslabiAlt from './ru/Oslabi';
+import Nenavidyashih from './cs/Nenavidyashih';
+import NenavidyashihAlt from './ru/Nenavidyashih';
+import Ispovedovanie from './cs/Ispovedovanie';
+import IspovedovanieAlt from './ru/Ispovedovanie';
 
 const Utro: React.FC = () => {
   return (
@@ -98,18 +94,14 @@ const Utro: React.FC = () => {
       <IoannikeyaAlt/>
       <IoannaDamaskina/>
       <IoannaDamaskinaAlt/>
-      <TroparKrestu/>
-      <TroparKrestuAlt/>
-      <OZhivih/>
-      <OZhivihAlt/>
-      <OUsopshih/>
-      <OUsopshihAlt/>
-      <PomyannikOZhivih/>
-      <PomyannikOZhivihAlt/>
-      <PomyannikOUsopshih/>
-      <PomyannikOUsopshihAlt/>
-      <Okonchanie/>
-      <OkonchanieAlt/>
+      <Krestu/>
+      <KrestuAlt/>
+      <Oslabi/>
+      <OslabiAlt/>
+      <Nenavidyashih/>
+      <NenavidyashihAlt/>
+      <Ispovedovanie/>
+      <IspovedovanieAlt/>
     </>
   );
 };

@@ -22,6 +22,7 @@ const Reader: React.FC = () => {
         },
         'section h3': {
           margin: '0 0 8px 0',
+          padding: '0 20px',
           fontSize: '1.1rem',
           lineHeight: 1.167,
           letterSpacing: '0em',
