@@ -1,123 +1,123 @@
-import Utrennie from './cs/Utrennie';
-import UtrennieAlt from './ru/Utrennie';
-import Miitarya from './cs/Miitarya';
-import MiitaryaAlt from './ru/Miitarya';
-import Prednachinatelnaya from './cs/Prednachinatelnaya';
-import PrednachinatelnayaAlt from './ru/Prednachinatelnaya';
-import SvyatomuDuhu from './cs/SvyatomuDuhu';
-import SvyatomuDuhuAlt from './ru/SvyatomuDuhu';
-import Trisvyatoe from './cs/Trisvyatoe';
-import TrisvyatoeAlt from './ru/Trisvyatoe';
-import KoPresvyatoyTroitse from './cs/KoPresvyatoyTroitse';
-import KoPresvyatoyTroitseAlt from './ru/KoPresvyatoyTroitse';
-import Gospodnya from './cs/Gospodnya';
-import GospodnyaAlt from './ru/Gospodnya';
-import TropariTroichnie from './cs/TropariTroichnie';
-import TropariTroichnieAlt from './ru/TropariTroichnie';
-import OtSna from './cs/OtSna';
-import OtSnaAlt from './ru/OtSna';
-import Psalom50 from './cs/Psalom50';
-import Psalom50Alt from './ru/Psalom50';
-import SimvolVerii from './cs/SimvolVerii';
-import SimvolVeriiAlt from './ru/SimvolVerii';
-import M1 from './cs/M1';
-import M1Alt from './ru/M1';
-import M2 from './cs/M2';
-import M2Alt from './ru/M2';
-import M3 from './cs/M3';
-import M3Alt from './ru/M3';
-import M4 from './cs/M4';
-import M4Alt from './ru/M4';
-import M5 from './cs/M5';
-import M5Alt from './ru/M5';
-import M6 from './cs/M6';
-import M6Alt from './ru/M6';
-import M7 from './cs/M7';
-import M7Alt from './ru/M7';
-import M8 from './cs/M8';
-import M8Alt from './ru/M8';
-import M9 from './cs/M9';
-import M9Alt from './ru/M9';
-import M10 from './cs/M10';
-import M10Alt from './ru/M10';
-import PriziivanieSvyatogo from './cs/PriziivanieSvyatogo';
-import PriziivanieSvyatogoAlt from './ru/PriziivanieSvyatogo';
-import PesnPresvyatoyBogoroditse from './cs/PesnPresvyatoyBogoroditse';
-import PesnPresvyatoyBogoroditseAlt from './ru/PesnPresvyatoyBogoroditse';
-import TroparKrestu from './cs/TroparKrestu';
-import TroparKrestuAlt from './ru/TroparKrestu';
-import OZhivih from './cs/OZhivih';
-import OZhivihAlt from './ru/OZhivih';
-import OUsopshih from './cs/OUsopshih';
-import OUsopshihAlt from './ru/OUsopshih';
-import PomyannikOZhivih from './cs/PomyannikOZhivih';
-import PomyannikOZhivihAlt from './ru/PomyannikOZhivih';
-import PomyannikOUsopshih from './cs/PomyannikOUsopshih';
-import PomyannikOUsopshihAlt from './ru/PomyannikOUsopshih';
-import Okonchanie from './cs/Okonchanie';
-import OkonchanieAlt from './ru/Okonchanie';
+import Утренние from './cs/Утренние';
+import УтренниеРу from './ru/Утренние';
+import Мытаря from './cs/Мытаря';
+import МытаряРу from './ru/Мытаря';
+import Предначинательная from './cs/Предначинательная';
+import ПредначинательнаяРу from './ru/Предначинательная';
+import СвятомуДуху from './cs/СвятомуДуху';
+import СвятомуДухуРу from './ru/СвятомуДуху';
+import Трисвятое from './cs/Трисвятое';
+import ТрисвятоеРу from './ru/Трисвятое';
+import КоПресвятойТроице from './cs/КоПресвятойТроице';
+import КоПресвятойТроицеРу from './ru/КоПресвятойТроице';
+import Господня from './cs/Господня';
+import ГосподняРу from './ru/Господня';
+import ТропариТроичные from './cs/ТропариТроичные';
+import ТропариТроичныеРу from './ru/ТропариТроичные';
+import ОтСна from './cs/ОтСна';
+import ОтСнаРу from './ru/ОтСна';
+import Псалом50 from './cs/Псалом50';
+import Псалом50Ру from './ru/Псалом50';
+import СимволВеры from './cs/СимволВеры';
+import СимволВерыРу from './ru/СимволВеры';
+import М1 from './cs/М1';
+import M1Ру from './ru/М1';
+import М2 from './cs/М2';
+import М2Ру from './ru/М2';
+import М3 from './cs/М3';
+import M3Ру from './ru/М3';
+import М4 from './cs/М4';
+import М4Ру from './ru/М4';
+import М5 from './cs/М5';
+import М5Ру from './ru/М5';
+import М6 from './cs/М6';
+import М6Ру from './ru/М6';
+import М7 from './cs/М7';
+import М7Ру from './ru/М7';
+import М8 from './cs/М8';
+import М8Ру from './ru/М8';
+import М9 from './cs/М9';
+import М9Ру from './ru/М9';
+import М10 from './cs/М10';
+import М10Ру from './ru/М10';
+import ПризываниеСвятого from './cs/ПризываниеСвятого';
+import ПризываниеСвятогоРу from './ru/ПризываниеСвятого';
+import ПесньПресвятойБогородице from './cs/ПесньПресвятойБогородице';
+import ПесньПресвятойБогородицеРу from './ru/ПесньПресвятойБогородице';
+import ТропарьКресту from './cs/ТропарьКресту';
+import TroparKrestuAlt from './ru/ТропарьКресту';
+import ОЖивых from './cs/ОЖивых';
+import ОЖивыхРу from './ru/ОЖивых';
+import ОУсопших from './cs/ОУсопших';
+import ОУсопшихРу from './ru/OUsopshih';
+import ПомянникОЖивых from './cs/ПомянникОЖивых';
+import ПомянникОЖивыхРу from './ru/ПомянникОЖивых';
+import ПомянникОУсопших from './cs/ПомянникОУсопших';
+import ПомянникОУсопшихРу from './ru/ПомянникОУсопших';
+import Окончание from './cs/Окончание';
+import ОкончаниеРу from './ru/Окончание';
 
 const Utro: React.FC = () => {
   return (
     <>
-      <Utrennie/>
-      <UtrennieAlt/>
-      <Miitarya/>
-      <MiitaryaAlt/>
-      <Prednachinatelnaya/>
-      <PrednachinatelnayaAlt/>
-      <SvyatomuDuhu/>
-      <SvyatomuDuhuAlt/>
-      <Trisvyatoe/>
-      <TrisvyatoeAlt/>
-      <KoPresvyatoyTroitse/>
-      <KoPresvyatoyTroitseAlt/>
-      <Gospodnya/>
-      <GospodnyaAlt/>
-      <TropariTroichnie/>
-      <TropariTroichnieAlt/>
-      <OtSna/>
-      <OtSnaAlt/>
-      <Psalom50/>
-      <Psalom50Alt/>
-      <SimvolVerii/>
-      <SimvolVeriiAlt/>
-      <M1/>
-      <M1Alt/>
-      <M2/>
-      <M2Alt/>
-      <M3/>
-      <M3Alt/>
-      <M4/>
-      <M4Alt/>
-      <M5/>
-      <M5Alt/>
-      <M6/>
-      <M6Alt/>
-      <M7/>
-      <M7Alt/>
-      <M8/>
-      <M8Alt/>
-      <M9/>
-      <M9Alt/>
-      <M10/>
-      <M10Alt/>
-      <PriziivanieSvyatogo/>
-      <PriziivanieSvyatogoAlt/>
-      <PesnPresvyatoyBogoroditse/>
-      <PesnPresvyatoyBogoroditseAlt/>
-      <TroparKrestu/>
+      <Утренние/>
+      <УтренниеРу/>
+      <Мытаря/>
+      <МытаряРу/>
+      <Предначинательная/>
+      <ПредначинательнаяРу/>
+      <СвятомуДуху/>
+      <СвятомуДухуРу/>
+      <Трисвятое/>
+      <ТрисвятоеРу/>
+      <КоПресвятойТроице/>
+      <КоПресвятойТроицеРу/>
+      <Господня/>
+      <ГосподняРу/>
+      <ТропариТроичные/>
+      <ТропариТроичныеРу/>
+      <ОтСна/>
+      <ОтСнаРу/>
+      <Псалом50/>
+      <Псалом50Ру/>
+      <СимволВеры/>
+      <СимволВерыРу/>
+      <М1/>
+      <M1Ру/>
+      <М2/>
+      <М2Ру/>
+      <М3/>
+      <M3Ру/>
+      <М4/>
+      <М4Ру/>
+      <М5/>
+      <М5Ру/>
+      <М6/>
+      <М6Ру/>
+      <М7/>
+      <М7Ру/>
+      <М8/>
+      <М8Ру/>
+      <М9/>
+      <М9Ру/>
+      <М10/>
+      <М10Ру/>
+      <ПризываниеСвятого/>
+      <ПризываниеСвятогоРу/>
+      <ПесньПресвятойБогородице/>
+      <ПесньПресвятойБогородицеРу/>
+      <ТропарьКресту/>
       <TroparKrestuAlt/>
-      <OZhivih/>
-      <OZhivihAlt/>
-      <OUsopshih/>
-      <OUsopshihAlt/>
-      <PomyannikOZhivih/>
-      <PomyannikOZhivihAlt/>
-      <PomyannikOUsopshih/>
-      <PomyannikOUsopshihAlt/>
-      <Okonchanie/>
-      <OkonchanieAlt/>
+      <ОЖивых/>
+      <ОЖивыхРу/>
+      <ОУсопших/>
+      <ОУсопшихРу/>
+      <ПомянникОЖивых/>
+      <ПомянникОЖивыхРу/>
+      <ПомянникОУсопших/>
+      <ПомянникОУсопшихРу/>
+      <Окончание/>
+      <ОкончаниеРу/>
     </>
   );
 };

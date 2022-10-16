@@ -1,4 +1,4 @@
-const OUsopshih: React.FC = () => {
+const ОУсопших: React.FC = () => {
   return (
     <section>
       <header>
@@ -23,4 +23,4 @@ const OUsopshih: React.FC = () => {
   );
 };
 
-export default OUsopshih;
+export default ОУсопших;
