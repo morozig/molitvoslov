@@ -1,8 +1,8 @@
 import {
   Box,
 } from '@mui/material'
-import Utro from '../prayers/utro';
-import Son from '../prayers/son';
+import Утренние from '../prayers/Утренние';
+import Вечерние from '../prayers/Вечерние';
 
 const Reader: React.FC = () => {
   return (
@@ -72,8 +72,8 @@ const Reader: React.FC = () => {
           textAlign: 'justify',
         }}
       >
-        <Utro/>
-        <Son/>
+        <Утренние/>
+        <Вечерние/>
       </Box>
     </Box>
   );
