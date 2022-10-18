@@ -3,6 +3,10 @@ import {
   Box,
   Drawer,
   IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   styled,
   Toolbar,
   Typography,
@@ -13,7 +17,7 @@ import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
 } from '@mui/icons-material';
-import Reader from './components/Reader';
+import Link from 'next/link';
 
 const drawerWidth = 260;
 
@@ -26,7 +30,16 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
-const App: React.FC = () => {
+interface AppProps {
+  title?: string;
+  children?: React.ReactNode;
+}
+
+const App: React.FC<AppProps> = (props) => {
+  const {
+    title = 'Молитвослов',
+    children,
+  } = props;
   const [
     isMobileDrawerOpen,
     setMobileDrawerOpen
@@ -37,6 +50,35 @@ const App: React.FC = () => {
   );
   const isSmallScreen = useIsSmallScreen();
 
+  const drawerContent = (
+    <List>
+      <ListItem
+        key='утренние'
+      >
+        <ListItemButton
+          LinkComponent={Link}
+          href='/utrennie'
+        >
+          <ListItemText>
+            Молитвы утренние
+          </ListItemText>
+        </ListItemButton>
+      </ListItem>
+      <ListItem
+        key='вечерние'
+      >
+        <ListItemButton
+          LinkComponent={Link}
+          href='/vechernie'
+        >
+          <ListItemText>
+            Молитвы на сон грядущим
+          </ListItemText>
+        </ListItemButton>
+      </ListItem>
+    </List>
+  );
+
   return (
     <Box
       sx={{ display: 'flex' }}
@@ -44,8 +86,11 @@ const App: React.FC = () => {
       <AppBar
         position='fixed'
         sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
+          width: {
+            xs: '100%',
+            md: `calc(100% - ${drawerWidth}px)`
+          },
+          ml: { md: `${drawerWidth}px` },
         }}
       >
         <Toolbar>
@@ -54,20 +99,20 @@ const App: React.FC = () => {
             aria-label='open drawer'
             edge='start'
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { md: 'none' } }}
           >
             <MenuIcon/>
           </IconButton>
           <Typography variant='h6' noWrap component='div'>
-            Responsive drawer
+            {title}
           </Typography>
         </Toolbar>
       </AppBar>
       <Box
         component={'nav'}
         sx={{
-          width: { sm: drawerWidth },
-          flexShrink: { sm: 0 }
+          width: { md: drawerWidth },
+          flexShrink: { md: 0 }
         }}
         aria-label='contents'
       >
@@ -80,7 +125,7 @@ const App: React.FC = () => {
               keepMounted: true,
             }}
             sx={{
-              display: { xs: 'block', sm: 'none' },
+              display: { xs: 'block', md: 'none' },
               '& .MuiDrawer-paper': {
                 boxSizing: 'border-box',
                 width: drawerWidth
@@ -88,21 +133,22 @@ const App: React.FC = () => {
             }}
           >
             <DrawerHeader>
-            <IconButton onClick={handleDrawerToggle}>
-              <ChevronLeftIcon />
-            </IconButton>
+              <IconButton onClick={handleDrawerToggle}>
+                <ChevronLeftIcon />
+              </IconButton>
             </DrawerHeader>
+            {drawerContent}
           </Drawer> :
           <Drawer
             variant='permanent'
             sx={{
-              display: { xs: 'block', sm: 'none' },
               '& .MuiDrawer-paper': {
                 boxSizing: 'border-box',
                 width: drawerWidth
               },
             }}
           >
+            {drawerContent}
           </Drawer>
         }
       </Box>
@@ -111,11 +157,14 @@ const App: React.FC = () => {
         sx={{
           flexGrow: 1,
           p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
+          width: {
+            xs: '100%',
+            md: `calc(100% - ${drawerWidth}px)`
+          },
         }}
       >
         <Toolbar />
-        <Reader />
+        {children}
       </Box>
     </Box>
   );

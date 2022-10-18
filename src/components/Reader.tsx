@@ -1,10 +1,16 @@
 import {
   Box,
 } from '@mui/material'
-import Утренние from '../prayers/Утренние';
-import Вечерние from '../prayers/Вечерние';
 
-const Reader: React.FC = () => {
+interface ReaderProps {
+  children?: React.ReactNode;
+}
+
+const Reader: React.FC<ReaderProps> = (props) => {
+  const {
+    children,
+  } = props;
+  
   return (
     <Box
       // className={styles.Reader}
@@ -72,8 +78,7 @@ const Reader: React.FC = () => {
           textAlign: 'justify',
         }}
       >
-        <Утренние/>
-        <Вечерние/>
+        {children}
       </Box>
     </Box>
   );
