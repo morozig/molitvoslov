@@ -1,9 +1,17 @@
+import { Box, Typography } from '@mui/material'
 import type { NextPage } from 'next'
-import App from '../src/App'
+import App from '../src/app'
 
 const Home: NextPage = () => {
   return (
-    <App/>
+    <App>
+      <Box>
+        <Typography>
+          Православный молитвослов для новоначальных с
+          параллельным переводом
+        </Typography>
+      </Box>
+    </App>
   )
 }
 
