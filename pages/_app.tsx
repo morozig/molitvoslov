@@ -28,7 +28,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           property='og:title'
           content='Молитвослов'
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/molitvoslov/apple-touch-icon.png"></link>
+        <link rel='icon' type='image/x-icon' href='/molitvoslov/favicon.ico'></link>
+        <link rel='apple-touch-icon' sizes='180x180' href='/molitvoslov/apple-touch-icon.png'></link>
       </Head>
       <CssBaseline/>
       <Component {...pageProps} />

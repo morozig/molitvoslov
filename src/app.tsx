@@ -57,7 +57,7 @@ const App: React.FC<AppProps> = (props) => {
       >
         <ListItemButton
           LinkComponent={Link}
-          href='/utrennie'
+          href='/molitvoslov/utrennie'
         >
           <ListItemText>
             Молитвы утренние
@@ -69,7 +69,7 @@ const App: React.FC<AppProps> = (props) => {
       >
         <ListItemButton
           LinkComponent={Link}
-          href='/vechernie'
+          href='/molitvoslov/vechernie'
         >
           <ListItemText>
             Молитвы на сон грядущим
