@@ -32,6 +32,11 @@ jobs:
       - run: npm run build
       - run: npm run export
       
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site
+          path: ./out
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
