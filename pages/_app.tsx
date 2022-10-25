@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </title>
         <meta
           name='description'
-          content='Православный молитвослов для новоначальных с
+          content='Online православный молитвослов для новоначальных с
             параллельным переводом'
         />
         <meta
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property='og:description'
-          content='Православный молитвослов для новоначальных с
+          content='Online православный молитвослов для новоначальных с
             параллельным переводом'
         />
         <meta
