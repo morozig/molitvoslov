@@ -49,7 +49,7 @@ import TroparKrestuAlt from './ру/ТропарьКресту';
 import ОЖивых from './цс/ОЖивых';
 import ОЖивыхРу from './ру/ОЖивых';
 import ОУсопших from './цс/ОУсопших';
-import ОУсопшихРу from './ру/OUsopshih';
+import ОУсопшихРу from './ру/ОУсопших';
 import ПомянникОЖивых from './цс/ПомянникОЖивых';
 import ПомянникОЖивыхРу from './ру/ПомянникОЖивых';
 import ПомянникОУсопших from './цс/ПомянникОУсопших';
