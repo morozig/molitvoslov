@@ -10,3 +10,11 @@ Online православный молитвослов для новоначал
 - Молитвы на сон грядущим
 
 Доступен online по [ссылке](https://morozig.github.io/molitvoslov)
+
+## Молитвословы с открытым исходным кодом
+- Валаамский молитвослов,
+  [github](https://github.com/vl-yaroslavtsev/valaam-prayers),
+  [demo](https://valaam.ru/prayers.v2.f7/)
+- Christendom,
+  [github](https://github.com/brotherilia/christendom),
+  [demo](http://christendom.menshikov.su/prayers.html)
