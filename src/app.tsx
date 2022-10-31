@@ -56,7 +56,7 @@ const App: React.FC<AppProps> = (props) => {
       >
         <ListItemButton
           LinkComponent={Link}
-          href='/'
+          href='/molitvoslov'
         >
           <ListItemText>
             Домашняя страница
