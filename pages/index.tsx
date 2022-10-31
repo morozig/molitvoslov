@@ -1,5 +1,6 @@
-import { Box, Typography } from '@mui/material'
+import { Box, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material'
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import App from '../src/app'
 
 const Home: NextPage = () => {
@@ -23,6 +24,45 @@ const Home: NextPage = () => {
           располагаются справа от текста на
           церковнославянском языке
         </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: { md: 'none' },
+        }}
+      >
+        <Typography
+          variant='h5'
+          component='div'
+          textAlign='center'
+        >
+          Содержание:
+        </Typography>
+        <List>
+          <ListItem
+            key='/utrennie'
+          >
+            <ListItemButton
+              LinkComponent={Link}
+              href='/molitvoslov/utrennie'
+            >
+              <ListItemText>
+                Молитвы утренние
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem
+            key='/vechernie'
+          >
+            <ListItemButton
+              LinkComponent={Link}
+              href='/molitvoslov/vechernie'
+            >
+              <ListItemText>
+                Молитвы на сон грядущим
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </List>
       </Box>
     </App>
   )

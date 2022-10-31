@@ -48,12 +48,23 @@ const App: React.FC<AppProps> = (props) => {
     () => setMobileDrawerOpen(current => !current),
     []
   );
-  const isSmallScreen = useIsSmallScreen();
 
   const drawerContent = (
     <List>
       <ListItem
-        key='утренние'
+        key='/'
+      >
+        <ListItemButton
+          LinkComponent={Link}
+          href='/'
+        >
+          <ListItemText>
+            Домашняя страница
+          </ListItemText>
+        </ListItemButton>
+      </ListItem>
+      <ListItem
+        key='/utrennie'
       >
         <ListItemButton
           LinkComponent={Link}
@@ -65,7 +76,7 @@ const App: React.FC<AppProps> = (props) => {
         </ListItemButton>
       </ListItem>
       <ListItem
-        key='вечерние'
+        key='/vechernie'
       >
         <ListItemButton
           LinkComponent={Link}
@@ -116,41 +127,40 @@ const App: React.FC<AppProps> = (props) => {
         }}
         aria-label='contents'
       >
-        {isSmallScreen ?
-          <Drawer
-            variant='temporary'
-            open={isMobileDrawerOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true,
-            }}
-            sx={{
-              display: { xs: 'block', md: 'none' },
-              '& .MuiDrawer-paper': {
-                boxSizing: 'border-box',
-                width: drawerWidth
-              },
-            }}
-          >
-            <DrawerHeader>
-              <IconButton onClick={handleDrawerToggle}>
-                <ChevronLeftIcon />
-              </IconButton>
-            </DrawerHeader>
-            {drawerContent}
-          </Drawer> :
-          <Drawer
-            variant='permanent'
-            sx={{
-              '& .MuiDrawer-paper': {
-                boxSizing: 'border-box',
-                width: drawerWidth
-              },
-            }}
-          >
-            {drawerContent}
-          </Drawer>
-        }
+        <Drawer
+          variant='temporary'
+          open={isMobileDrawerOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true,
+          }}
+          sx={{
+            display: { xs: 'block', md: 'none' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: drawerWidth
+            },
+          }}
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerToggle}>
+              <ChevronLeftIcon />
+            </IconButton>
+          </DrawerHeader>
+          {drawerContent}
+        </Drawer>
+        <Drawer
+          variant='permanent'
+          sx={{
+            display: { xs: 'none', md: 'block' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
+              width: drawerWidth
+            },
+          }}
+        >
+          {drawerContent}
+        </Drawer>
       </Box>
       <Box
         component='main'
