@@ -51,6 +51,7 @@ const Reader: React.FC<ReaderProps> = (props) => {
         
         'section > p': {
           textAlign: 'justify',
+          hyphens: 'auto',
         },
 
         'section footer': {
@@ -68,6 +69,7 @@ const Reader: React.FC<ReaderProps> = (props) => {
       }}
     >
       <Box
+        lang='cu'
         sx={{
           display: 'grid',
           gridTemplateColumns: {
