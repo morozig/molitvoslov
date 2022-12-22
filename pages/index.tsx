@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               href='/molitvoslov/vechernie'
             >
               <ListItemText>
-                Молитвы на сон грядущим
+                Молитвы вечерние
               </ListItemText>
             </ListItemButton>
           </ListItem>

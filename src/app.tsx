@@ -83,7 +83,7 @@ const App: React.FC<AppProps> = (props) => {
           href='/molitvoslov/vechernie'
         >
           <ListItemText>
-            Молитвы на сон грядущим
+            Молитвы вечерние
           </ListItemText>
         </ListItemButton>
       </ListItem>

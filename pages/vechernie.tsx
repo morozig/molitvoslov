@@ -6,7 +6,7 @@ import Вечерние from '../src/prayers/Вечерние';
 const Vechernie: NextPage = () => {
   return (
     <App
-      title='Молитвы на сон грядущим'
+      title='Молитвы вечерние'
     >
       <Reader>
         <Вечерние/>
