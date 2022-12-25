@@ -62,6 +62,18 @@ const Home: NextPage = () => {
               </ListItemText>
             </ListItemButton>
           </ListItem>
+          <ListItem
+            key='/kanoniisusu'
+          >
+            <ListItemButton
+              LinkComponent={Link}
+              href='/molitvoslov/kanoniisusu'
+            >
+              <ListItemText>
+                Канон Иисусу Христу
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
       </Box>
     </App>

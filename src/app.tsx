@@ -11,13 +11,13 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import { useCallback, useState } from 'react';
-import { useIsSmallScreen } from './hooks';
+import { useCallback, useMemo, useState } from 'react';
 import {
   Menu as MenuIcon,
   ChevronLeft as ChevronLeftIcon,
 } from '@mui/icons-material';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 const drawerWidth = 260;
 
@@ -48,6 +48,14 @@ const App: React.FC<AppProps> = (props) => {
     () => setMobileDrawerOpen(current => !current),
     []
   );
+  const router = useRouter();
+
+  const route = useMemo(() => {
+    return `${router.basePath}${router.route}`;
+  }, [
+    router.basePath,
+    router.route,
+  ]);
 
   const drawerContent = (
     <List>
@@ -57,6 +65,7 @@ const App: React.FC<AppProps> = (props) => {
         <ListItemButton
           LinkComponent={Link}
           href='/molitvoslov'
+          selected={route === '/molitvoslov'}
         >
           <ListItemText>
             Домашняя страница
@@ -69,6 +78,7 @@ const App: React.FC<AppProps> = (props) => {
         <ListItemButton
           LinkComponent={Link}
           href='/molitvoslov/utrennie'
+          selected={route === '/molitvoslov/utrennie'}
         >
           <ListItemText>
             Молитвы утренние
@@ -81,9 +91,23 @@ const App: React.FC<AppProps> = (props) => {
         <ListItemButton
           LinkComponent={Link}
           href='/molitvoslov/vechernie'
+          selected={route === '/molitvoslov/vechernie'}
         >
           <ListItemText>
             Молитвы вечерние
+          </ListItemText>
+        </ListItemButton>
+      </ListItem>
+      <ListItem
+        key='/kanoniisusu'
+      >
+        <ListItemButton
+          LinkComponent={Link}
+          href='/molitvoslov/kanoniisusu'
+          selected={route === '/molitvoslov/kanoniisusu'}
+        >
+          <ListItemText>
+            Канон Иисусу Христу
           </ListItemText>
         </ListItemButton>
       </ListItem>
