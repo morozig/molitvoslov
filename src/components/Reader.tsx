@@ -48,12 +48,6 @@ const Reader: React.FC<ReaderProps> = (props) => {
           lineHeight: 1.57,
           letterSpacing: '0.00714em',
         },
-
-        // Ирмос
-        'section header + p b + span': {
-          marginLeft: '1ex',
-          fontSize: '0.9rem',
-        },
         
         'section > p': {
           textAlign: 'justify',
