@@ -35,7 +35,7 @@ import Молитва1Ру from './ру/Молитва1';
 import Молитва2 from './цс/Молитва2';
 import Молитва2Ру from './ру/Молитва2';
 
-const Вечерние: React.FC = () => {
+const Канон: React.FC = () => {
   return (
     <>
       <КанонБогородице/>
@@ -78,4 +78,4 @@ const Вечерние: React.FC = () => {
   );
 };
 
-export default Вечерние;
+export default Канон;
