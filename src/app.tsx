@@ -150,6 +150,19 @@ const App: React.FC<AppProps> = (props) => {
           </ListItemText>
         </ListItemButton>
       </ListItem>
+      <ListItem
+        key='/posvyatomprichaschenii'
+      >
+        <ListItemButton
+          LinkComponent={Link}
+          href='/molitvoslov/posvyatomprichaschenii'
+          selected={route === '/molitvoslov/posvyatomprichaschenii'}
+        >
+          <ListItemText>
+            По Святом Причащении
+          </ListItemText>
+        </ListItemButton>
+      </ListItem>
     </List>
   );
 

@@ -110,6 +110,18 @@ const Home: NextPage = () => {
               </ListItemText>
             </ListItemButton>
           </ListItem>
+          <ListItem
+            key='/posvyatomprichaschenii'
+          >
+            <ListItemButton
+              LinkComponent={Link}
+              href='/molitvoslov/posvyatomprichaschenii'
+            >
+              <ListItemText>
+                По Святом Причащении
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
         </List>
       </Box>
     </App>
