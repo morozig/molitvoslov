@@ -1,11 +1,9 @@
 import { Box, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material'
-import type { NextPage } from 'next'
 import Link from 'next/link'
-import App from '../src/app'
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <App>
+    <>
       <Box>
         <Typography
           sx={{
@@ -43,7 +41,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/utrennie'
+              href='/utrennie'
             >
               <ListItemText>
                 Молитвы утренние
@@ -55,7 +53,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/vechernie'
+              href='/vechernie'
             >
               <ListItemText>
                 Молитвы вечерние
@@ -67,7 +65,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/kanoniisusu'
+              href='/kanoniisusu'
             >
               <ListItemText>
                 Канон Иисусу Христу
@@ -79,7 +77,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/kanonbogoroditse'
+              href='/kanonbogoroditse'
             >
               <ListItemText>
                 Канон Богородице
@@ -91,7 +89,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/kanonangeluhranitelyu'
+              href='/kanonangeluhranitelyu'
             >
               <ListItemText>
                 Канон Ангелу Хранителю
@@ -103,7 +101,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/kosvyatomuprichascheniyu'
+              href='/kosvyatomuprichascheniyu'
             >
               <ListItemText>
                 Ко Святому Причащению
@@ -115,7 +113,7 @@ const Home: NextPage = () => {
           >
             <ListItemButton
               LinkComponent={Link}
-              href='/molitvoslov/posvyatomprichaschenii'
+              href='/posvyatomprichaschenii'
             >
               <ListItemText>
                 По Святом Причащении
@@ -124,8 +122,6 @@ const Home: NextPage = () => {
           </ListItem>
         </List>
       </Box>
-    </App>
-  )
+    </>
+  );
 }
-
-export default Home

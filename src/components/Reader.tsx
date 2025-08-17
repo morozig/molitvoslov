@@ -13,7 +13,6 @@ const Reader: React.FC<ReaderProps> = (props) => {
   
   return (
     <Box
-      // className={styles.Reader}
       sx={{
         width: '100%',
         maxWidth: '900px',
